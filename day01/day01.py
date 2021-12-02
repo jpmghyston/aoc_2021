@@ -1,6 +1,6 @@
 
 def get_depths():
-    with open("day1_input.txt") as f:
+    with open("day01_input.txt") as f:
         input_data = f.readlines()
     return [int(x) for x in input_data]
 
