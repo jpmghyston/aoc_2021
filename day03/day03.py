@@ -39,10 +39,8 @@ def part_2():
         _, bitwise_epsilon = part_1(possible_co2_scrubber_ratings)
         possible_co2_scrubber_ratings = [x for x in possible_co2_scrubber_ratings if x[pos] == int(bitwise_epsilon[pos])]
         pos += 1
-
     oxygen_rating = int("".join([str(x) for x in possible_oxygen_gen_ratings[0]]), 2)
     co2_rating = int("".join([str(x) for x in possible_co2_scrubber_ratings[0]]), 2)
-
     print(oxygen_rating * co2_rating)
 
 
