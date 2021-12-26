@@ -24,12 +24,6 @@ def increment_pair(pair_counts, pair, inc_by):
     else:
         pair_counts[pair] = inc_by
 
-def decrement_or_delete_pair(pair_counts, pair):
-    if pair_counts[pair] <= 1:
-        pair_counts.pop(pair)
-    else:
-        pair_counts[pair] -= 1
-
 def apply_step_optimised(pair_counts, rules, char_counts):
     init_pair_counts = pair_counts.copy()
     new_pair_counts = pair_counts.copy()
